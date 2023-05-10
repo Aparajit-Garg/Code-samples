@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import './App.css';
+// import './App.css';
 import Cards from "./components/Cards/Cards";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
 
     useEffect(()=> {
         fetchProducts();
-    }, [page]);
+    }, []);
 
     const fetchProducts = async () => {
         const response = await fetch("https://dummyjson.com/products?limit=100");
@@ -25,10 +25,14 @@ function App() {
         <div>
             {products.length > 0 && 
             <div>
-                <Cards
+                {products.map((prod) => {
+                    return <Cards
                     page={page}
-                    products={products}
+                    productList={prod}
+                    key={prod.id}
                     />
+                })}
+                
             </div>}
       
         </div>

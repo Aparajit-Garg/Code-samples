@@ -1,0 +1,9 @@
+.products {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: vw;
+    height: vh;
+    justify-content: center;
+    /* align-items: ; */
+}
