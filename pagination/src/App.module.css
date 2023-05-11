@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #fddde2;
+    width: vw;
+    height: vh;
 }
 
 /* .main__container {
@@ -40,3 +42,8 @@
     cursor: none;
     opacity: 0;
 }
+
+
+/* @media screen and (max-width: 600) {
+    
+} */
