@@ -9,10 +9,10 @@ const Cards = (props) => {
 
     return (
         <div className={classes.products}>
-            {propCheck(props.productList)}
-            {/* <span>
+            <span>
                 <img src={props.productList.thumbnail} alt={props.productList.title} />
-            </span> */}
+                <span>{props.productList.title}</span>
+            </span>
         </div>
     )
 }

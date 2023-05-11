@@ -7,3 +7,10 @@
     justify-content: center;
     /* align-items: ; */
 }
+
+.products span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 1rem;
+}

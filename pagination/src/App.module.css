@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fddde2;
+}
+
+/* .main__container {
+    display: flex;
+    flex-direction: column;
+} */
+
+.page__numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: green; */
+}
+
+.buttons {
+    width: 2rem;
+    height: 2rem;
+    /* margin: 0.2rem; */
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 0.4rem;
+    font-size: 1em;
+    margin-bottom: 1rem;
+}
+
+.buttons:hover {
+    cursor:pointer;
+}
+
+.page_selected {
+    background-color:rgb(220, 220, 220);
+}
+
+.disable {
+    cursor: none;
+    opacity: 0;
+}
